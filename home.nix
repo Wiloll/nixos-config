@@ -9,7 +9,6 @@
 
         packages = with pkgs; [
             neofetch
-            librewolf
             discord
             obsidian
         ];
