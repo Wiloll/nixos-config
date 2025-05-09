@@ -8,20 +8,32 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
+<<<<<<< HEAD
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usb_storage" "sd_mod" ];
+=======
+  boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" "usb_storage" "sd_mod" ];
+>>>>>>> 2896d2f (Initial commit)
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
+<<<<<<< HEAD
     { device = "/dev/disk/by-uuid/91eaff8a-5430-4c02-a2fb-7ad615560cd9";
+=======
+    { device = "/dev/disk/by-uuid/294e59ce-3838-49ea-a261-9141a5ca3e69";
+>>>>>>> 2896d2f (Initial commit)
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/DE60-38B4";
       fsType = "vfat";
+<<<<<<< HEAD
       options = [ "fmask=0022" "dmask=0022" ];
+=======
+      options = [ "fmask=0077" "dmask=0077" ];
+>>>>>>> 2896d2f (Initial commit)
     };
 
   swapDevices = [ ];

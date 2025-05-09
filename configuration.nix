@@ -8,7 +8,11 @@
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+<<<<<<< HEAD
 	boot.loader.systemd-boot.enable = true;
+=======
+  boot.loader.systemd-boot.enable = true;
+>>>>>>> 2896d2f (Initial commit)
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "nixos";
@@ -31,6 +35,7 @@
     LC_TIME = "uk_UA.UTF-8";
   };
 
+<<<<<<< HEAD
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
@@ -38,14 +43,32 @@
   services.xserver.desktopManager.gnome.enable = true;
 
   #programs.hyprland.enable = true;
+=======
+  #programs.hyprland.enable = true;
+  services.gnome.core-utilities.enable = false;
+>>>>>>> 2896d2f (Initial commit)
 
   services.flatpak = {
     enable = true;
   };
 
+<<<<<<< HEAD
   services.xserver.xkb = {
     layout = "us, ua";
     variant = "";
+=======
+  services.xserver = {
+  enable = true;
+  displayManager.gdm.enable = true;
+  desktopManager.gnome.enable = true;
+  videoDrivers = [ "nvidia" ];
+
+  xkb = {
+    layout  = "us,ua";
+    variant = "workman,";
+    options = "grp:win_space_toggle";
+    };
+>>>>>>> 2896d2f (Initial commit)
   };
 
   hardware.nvidia = {
@@ -54,8 +77,11 @@
     nvidiaSettings = true;
   };
 
+<<<<<<< HEAD
   services.xserver.videoDrivers = [ "nvidia" ];
 
+=======
+>>>>>>> 2896d2f (Initial commit)
   services.printing.enable = true;
 
   hardware.pulseaudio.enable = false;
@@ -81,6 +107,10 @@
     pkgs.xorg.xrandr
     git
     home-manager
+<<<<<<< HEAD
+=======
+    gnome-console
+>>>>>>> 2896d2f (Initial commit)
     #kitty
   ];
 
