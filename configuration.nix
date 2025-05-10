@@ -95,6 +95,7 @@
     gnome-console
     gnome-software
     nautilus
+    efibootmgr
     #kitty
   ];
 
