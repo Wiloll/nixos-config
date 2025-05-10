@@ -39,22 +39,31 @@
   };
 
   services.xserver = {
-  enable = true;
-  displayManager.gdm.enable = true;
-  desktopManager.gnome.enable = true;
-  videoDrivers = [ "nvidia" ];
+    enable = true;
+    displayManager.gdm.enable = true;
+    desktopManager.gnome.enable = true;
+    videoDrivers = [ "nvidia" ];
 
-  xkb = {
-    layout  = "us,ua";
-    variant = "workman,";
-    options = "grp:win_space_toggle";
-    };
+    xkb = {
+      layout  = "us,ua";
+      variant = "workman,";
+      options = "grp:win_space_toggle";
+      };
   };
 
   hardware.nvidia = {
     modesetting.enable = true;
     open = false;  # Or true, depending on your preference and GPU
     nvidiaSettings = true;
+  };
+
+  hardware.opengl = {
+    enable = true;
+    driSupport32Bit = true;
+    extraPackages = with pkgs; [
+      vulkan-loader     # ICD-завантажувач
+      vulkan-tools      # утиліти типу vulkaninfo (за бажанням)
+    ];
   };
 
   services.printing.enable = true;

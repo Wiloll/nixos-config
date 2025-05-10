@@ -13,6 +13,7 @@
             obsidian
             unityhub
             github-desktop
+            steam
         ];
     };
 
