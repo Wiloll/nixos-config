@@ -63,7 +63,7 @@
     enable32Bit = true;
     extraPackages = with pkgs; [
       vulkan-loader     # ICD-завантажувач
-      vulkan-tools      # утиліти типу vulkaninfo (за бажанням)
+      vulkan-tools      # утиліти типу vulkaninfo (за бажанням)\
     ];
   };
 
@@ -96,6 +96,7 @@
     gnome-software
     nautilus
     efibootmgr
+    mesa
     #kitty
   ];
 
