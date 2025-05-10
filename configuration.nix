@@ -83,6 +83,8 @@
     git
     home-manager
     gnome-console
+    gnome-software
+    nautilus
     #kitty
   ];
 
