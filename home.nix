@@ -11,6 +11,8 @@
             neofetch
             discord
             obsidian
+            unityhub
+            github-desktop
         ];
     };
 
