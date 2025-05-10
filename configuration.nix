@@ -10,6 +10,7 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.efi.efiSysMountPoint = "/boot";
 
   networking.hostName = "nixos";
 
@@ -57,9 +58,9 @@
     nvidiaSettings = true;
   };
 
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    driSupport32Bit = true;
+    enable32Bit = true;
     extraPackages = with pkgs; [
       vulkan-loader     # ICD-завантажувач
       vulkan-tools      # утиліти типу vulkaninfo (за бажанням)
