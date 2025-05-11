@@ -94,6 +94,7 @@
     home-manager
     gnome-console
     gnome-software
+    gnome-system-monitor
     nautilus
     efibootmgr
     mesa
