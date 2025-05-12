@@ -14,6 +14,7 @@
             unityhub
             github-desktop
             steam
+            onlyoffice-desktopeditors
         ];
     };
 
