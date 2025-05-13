@@ -98,6 +98,7 @@
     nautilus
     efibootmgr
     mesa
+    ntfs3g
     #kitty
   ];
 
