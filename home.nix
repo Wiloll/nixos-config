@@ -15,6 +15,7 @@
             github-desktop
             steam
             onlyoffice-desktopeditors
+            gparted
         ];
     };
 
