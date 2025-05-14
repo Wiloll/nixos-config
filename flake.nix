@@ -10,10 +10,13 @@
         };
     };
 
-    outputs = { nixpkgs, home-manager, ... }: {
+    outputs = inputs@{ nixpkgs, home-manager, ... }: {
         nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
             system = "x86_64-linux";
-            modules = [ ./configuration.nix ];
+            modules = [ 
+                ./configuration.nix 
+            ];
+            specialArgs = { inherit inputs; };
         };
 
         homeConfigurations.wilol = home-manager.lib.homeManagerConfiguration {

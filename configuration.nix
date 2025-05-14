@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ inputs, lib, config, pkgs, ... }:
 
 {
   imports =
@@ -8,13 +8,34 @@
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot";
+  boot = {# Bootloader
+    loader = {
+      efi.canTouchEfiVariables = true;
+      efi.efiSysMountPoint = "/boot";
+      grub ={
+        enable = true;
+        device = "nodev";
+        efiSupport = true;
+        useOSProber = true;
+        theme = "${
+          (pkgs.fetchFromGitHub {
+            owner = "semimqmo";
+            repo = "sekiro_grub_theme";
+            rev = "1affe05f7257b72b69404cfc0a60e88aa19f54a6";
+            hash = "sha256-wTr5S/17uwQXkWwElqBKIV1J3QUP6W2Qx2Nw0SaM7Qk=";
+          })
+        }/Sekiro";
+      };
+      timeout = 10;
+    };
+  };
 
   networking.hostName = "nixos";
 
   networking.networkmanager.enable = true;
+
+  networking.firewall.enable = true;
+
 
   time.timeZone = "Europe/Kyiv";
 
