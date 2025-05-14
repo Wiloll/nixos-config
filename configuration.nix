@@ -17,14 +17,12 @@
         device = "nodev";
         efiSupport = true;
         useOSProber = true;
-        theme = "${
-          (pkgs.fetchFromGitHub {
-            owner = "semimqmo";
-            repo = "sekiro_grub_theme";
-            rev = "1affe05f7257b72b69404cfc0a60e88aa19f54a6";
-            hash = "sha256-wTr5S/17uwQXkWwElqBKIV1J3QUP6W2Qx2Nw0SaM7Qk=";
-          })
-        }/Sekiro";
+        theme = "${pkgs.fetchFromGitHub {
+          owner = "YouStones";
+          repo  = "ultrakill-grub-theme";
+          rev = "6df32df10aaa79c14d39775d5a5e44416fcb7078";
+          hash  = "sha256-PgQu1m7H11O8QveVvnofdZDqfs08mJqTMsaJk9Th+GQ=";
+        }}";
       };
       timeout = 10;
     };
