@@ -16,6 +16,7 @@
             steam
             onlyoffice-desktopeditors
             gparted
+            kitty
         ];
     };
 

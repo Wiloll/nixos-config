@@ -118,7 +118,6 @@
     efibootmgr
     mesa
     ntfs3g
-    #kitty
   ];
 
   system.stateVersion = "24.11";
