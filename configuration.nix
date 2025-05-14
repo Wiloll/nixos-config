@@ -102,11 +102,5 @@
     #kitty
   ];
 
-  fileSystems."/mnt/apart" = {
-    device = "/dev/nvme1n1p4";
-    fsType = "ext4";
-    options = [ "defaults" ];
-  };
-
   system.stateVersion = "24.11";
 }
