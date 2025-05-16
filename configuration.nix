@@ -1,14 +1,12 @@
 { inputs, lib, config, pkgs, ... }:
-
 {
   imports =
     [
       ./hardware-configuration.nix
+      # nixos-boot already imported via flake.nix
     ];
 
-  nix.settings.experimental-features = ["nix-command" "flakes"];
-
-  boot = {# Bootloader
+   boot = {# Bootloader
     loader = {
       efi.canTouchEfiVariables = true;
       efi.efiSysMountPoint = "/boot";
@@ -33,7 +31,6 @@
   networking.networkmanager.enable = true;
 
   networking.firewall.enable = true;
-
 
   time.timeZone = "Europe/Kyiv";
 
