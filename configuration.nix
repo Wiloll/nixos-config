@@ -115,6 +115,7 @@
     efibootmgr
     mesa
     ntfs3g
+    os-prober
   ];
 
   system.stateVersion = "24.11";
