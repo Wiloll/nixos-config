@@ -117,8 +117,8 @@
     efibootmgr
     mesa
     ntfs3g
-    os-prober
     parted
+    gruvbox-dark-gtk
   ];
 
   system.stateVersion = "24.11";
