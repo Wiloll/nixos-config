@@ -14,7 +14,7 @@
         enable = true;
         device = "nodev";
         efiSupport = true;
-        useOsProber = true;
+        useOSProber = true;
         theme = "${pkgs.fetchFromGitHub {
           owner = "YouStones";
           repo  = "ultrakill-grub-theme";
