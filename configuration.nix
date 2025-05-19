@@ -14,7 +14,6 @@
         enable = true;
         device = "nodev";
         efiSupport = true;
-        useOSProber = true;
         theme = "${pkgs.fetchFromGitHub {
           owner = "YouStones";
           repo  = "ultrakill-grub-theme";
@@ -107,7 +106,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    pkgs.xorg.xrandr
+    xorg.xrandr
     git
     home-manager
     gnome-console
@@ -118,7 +117,6 @@
     mesa
     ntfs3g
     parted
-    gruvbox-dark-gtk
   ];
 
   system.stateVersion = "24.11";
