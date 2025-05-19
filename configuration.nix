@@ -14,6 +14,7 @@
         enable = true;
         device = "nodev";
         efiSupport = true;
+        useOsProber = true;
         theme = "${pkgs.fetchFromGitHub {
           owner = "YouStones";
           repo  = "ultrakill-grub-theme";
@@ -117,6 +118,7 @@
     mesa
     ntfs3g
     parted
+    os-prober
   ];
 
   system.stateVersion = "24.11";
