@@ -15,6 +15,8 @@
             github-desktop
             steam
             onlyoffice-desktopeditors
+            gtk4
+            refine
         ];
     };
 
@@ -41,13 +43,5 @@
             github.github-vscode-theme
             johnpapa.vscode-peacock
         ]; 
-    };
-
-    gtk = {
-        enable = true;
-        theme = {
-            name = "Gruvbox Dark";
-            package = pkgs.gruvbox-dark-gtk;
-        };
     };
 }
