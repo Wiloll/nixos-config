@@ -118,6 +118,7 @@
     mesa
     ntfs3g
     parted
+    gparted
     os-prober
   ];
 
