@@ -8,8 +8,8 @@
 
    boot = {# Bootloader
     loader = {
-      efi.canTouchEfiVariables = true;
       efi.efiSysMountPoint = "/boot";
+      efi.canTouchEfiVariables = true;
       grub ={
         enable = true;
         device = "nodev";
@@ -25,6 +25,8 @@
       timeout = 10;
     };
   };
+
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   networking.hostName = "nixos";
 
@@ -116,6 +118,7 @@
     mesa
     ntfs3g
     os-prober
+    parted
   ];
 
   system.stateVersion = "24.11";
