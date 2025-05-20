@@ -16,7 +16,6 @@
             steam
             onlyoffice-desktopeditors
             gtk4
-            refine
         ];
     };
 

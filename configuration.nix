@@ -120,6 +120,7 @@
     parted
     gparted
     os-prober
+    gnome.gnome-tweaks
   ];
 
   system.stateVersion = "24.11";
