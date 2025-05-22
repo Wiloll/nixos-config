@@ -17,6 +17,7 @@
             onlyoffice-desktopeditors
             gtk4
             zsh-completions
+            zathura
         ];
     };
 
