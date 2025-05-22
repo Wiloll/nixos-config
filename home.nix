@@ -18,6 +18,8 @@
             gtk4
             zsh-completions
             zathura
+            nemo
+            dconf-editor
         ];
     };
 
