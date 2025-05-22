@@ -123,5 +123,9 @@
     gnome.gnome-tweaks
   ];
 
+  environment.shells = with pkgs; [ zsh ];
+
+  environment.pathsToLink = [ "/share/zsh" ];
+
   system.stateVersion = "24.11";
 }

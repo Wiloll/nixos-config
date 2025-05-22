@@ -16,11 +16,14 @@
             steam
             onlyoffice-desktopeditors
             gtk4
+            zsh-completions
         ];
     };
 
-    programs.bash = {
+    programs.zsh = {
         enable = true;
+        enableCompletion = true;
+        autosuggestion.enable = true;
         shellAliases = 
         let
             flakePath = "~/nix";
