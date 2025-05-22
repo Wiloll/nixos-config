@@ -20,6 +20,7 @@
             zathura
             nemo
             dconf-editor
+            p7zip
         ];
     };
 
