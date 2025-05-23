@@ -5,7 +5,7 @@
     home = {
         username = "wilol";
         homeDirectory = "/home/wilol";
-        stateVersion = "24.11";
+        stateVersion = "25.05";
 
         packages = with pkgs; [
             neofetch
@@ -21,9 +21,7 @@
             nemo
             dconf-editor
             p7zip
-            ventoy-full
             alacritty
-            waybar
             wofi
             hyprpaper
             mako
@@ -31,6 +29,10 @@
             playerctl
         ];
     };
+
+    imports = [
+        ./modules
+    ];
 
     programs.bash = {
         enable = true;
@@ -46,7 +48,7 @@
 
     programs.vscode = {
         enable = true;
-        extensions = with pkgs.vscode-extensions; [
+        profiles.default.extensions = with pkgs.vscode-extensions; [
             ms-python.python
             bbenoist.nix
             esbenp.prettier-vscode
