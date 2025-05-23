@@ -38,11 +38,6 @@
             hms = "home-manager switch --flake ${flakePath}";
             c = "code";
         };
-        ohMyZsh = {
-            enable = true;
-            plugins = [ "git" "thefuck" ];
-            theme = "robbyrussell";
-        };
         zplug = {
             enable = true;
             plugins = [
