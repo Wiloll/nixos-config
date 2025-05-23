@@ -38,6 +38,10 @@
 
   i18n.defaultLocale = "en_US.UTF-8";
 
+  programs.hyprland.enable = true;
+
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "uk_UA.UTF-8";
     LC_IDENTIFICATION = "uk_UA.UTF-8";
@@ -120,7 +124,6 @@
     parted
     gparted
     os-prober
-    gnome.gnome-tweaks
   ];
 
   system.stateVersion = "24.11";

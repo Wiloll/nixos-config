@@ -15,7 +15,7 @@
             github-desktop
             steam
             onlyoffice-desktopeditors
-            gtk4
+            gtk3
             zsh-completions
             zathura
             nemo
@@ -23,6 +23,12 @@
             p7zip
             ventoy-full
             alacritty
+            waybar
+            wofi
+            hyprpaper
+            mako
+            brightnessctl
+            playerctl
         ];
     };
 
