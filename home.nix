@@ -21,6 +21,7 @@
             nemo
             dconf-editor
             p7zip
+            ventoy
         ];
     };
 
