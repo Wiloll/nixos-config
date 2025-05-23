@@ -22,6 +22,7 @@
             dconf-editor
             p7zip
             ventoy-full
+            kitty
         ];
     };
 
