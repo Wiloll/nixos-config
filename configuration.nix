@@ -104,8 +104,6 @@
     ];
   };
 
-  users.defaultUserShell = pkgs.zsh;
-
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
@@ -124,10 +122,6 @@
     os-prober
     gnome.gnome-tweaks
   ];
-
-  environment.shells = with pkgs; [ zsh ];
-
-  environment.pathsToLink = [ "/share/zsh" ];
 
   system.stateVersion = "24.11";
 }
