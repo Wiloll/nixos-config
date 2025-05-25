@@ -61,7 +61,7 @@
   services.xserver = {
     enable = true;
     displayManager.gdm.enable = true;
-    videoDrivers = [ "nvidia" ];
+    videoDrivers = [ "nvidia" "nvidia-dkms" "nvidia-utils" "nvidia-wayland"];
 
     xkb = {
       layout  = "us,ua";
@@ -119,5 +119,5 @@
     os-prober
   ];
 
-  system.stateVersion = "24.11";
+  system.stateVersion = "25.05";
 }
