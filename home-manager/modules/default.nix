@@ -1,5 +1,6 @@
 {
   imports = [
     ./waybar
+    ./obsidian.nix
   ];
 }
