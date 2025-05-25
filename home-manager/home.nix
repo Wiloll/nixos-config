@@ -76,6 +76,7 @@
             "terminal.integrated.fontSize" = 17.333333333333332;
             "workbench.colorTheme" = lib.mkForce "Abyss";
             "git.enableSmartCommit" = true;
+            "git.confirmSync" = false;
         };
     };
 }
