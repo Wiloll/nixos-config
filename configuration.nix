@@ -54,9 +54,6 @@
     LC_TIME = "uk_UA.UTF-8";
   };
 
-  #programs.hyprland.enable = true;
-  services.gnome.core-utilities.enable = false;
-
   services.flatpak = {
     enable = true;
   };
@@ -64,7 +61,6 @@
   services.xserver = {
     enable = true;
     displayManager.gdm.enable = true;
-    desktopManager.gnome.enable = true;
     videoDrivers = [ "nvidia" ];
 
     xkb = {
@@ -114,9 +110,6 @@
     xorg.xrandr
     git
     home-manager
-    gnome-console
-    gnome-software
-    gnome-system-monitor
     nautilus
     efibootmgr
     mesa
