@@ -38,6 +38,10 @@
 
   i18n.defaultLocale = "en_US.UTF-8";
 
+  programs.hyprland.enable = true;
+
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "uk_UA.UTF-8";
     LC_IDENTIFICATION = "uk_UA.UTF-8";
@@ -53,12 +57,10 @@
   services.flatpak = {
     enable = true;
   };
- 
-  services.getty.autologinUser = "wilol";
 
   services.xserver = {
     enable = true;
-    displayManager.gdm.enable = false;
+    displayManager.gdm.enable = true;
     videoDrivers = [ "nvidia" "nvidia-dkms" "nvidia-utils" "nvidia-wayland"];
 
     xkb = {
@@ -67,12 +69,6 @@
       options = "grp:win_space_toggle";
       };
   };
-
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = with pkgs; [
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
-  ];
 
   hardware.nvidia = {
     modesetting.enable = true;
