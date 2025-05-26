@@ -6,10 +6,6 @@
       env = [
         # Hint Electron apps to use Wayland
         "NIXOS_OZONE_WL,1"
-        "XDG_CURRENT_DESKTOP,Hyprland"
-        "XDG_SESSION_TYPE,wayland"
-        "XDG_SESSION_DESKTOP,Hyprland"
-        "QT_QPA_PLATFORM,wayland"
         "XCURSOR_SIZE,24"
         "HYPRCURSOR_SIZE,24"
         "AQ_DRM_DEVICES,/dev/dri/card0:/dev/dri/card1"
@@ -207,18 +203,12 @@
         "3, monitor:eDP-1"
         "4, monitor:eDP-1"
         "5, monitor:eDP-1"
-        "6, monitor:eDP-1"
-        "7, monitor:eDP-1"
-        "8, monitor:eDP-1"
 
-        "9, monitor:HDMI-A-1, default:true"
+        "6, monitor:HDMI-A-1, default:true"
+        "7, monitor:HDMI-A-1"
+        "8, monitor:HDMI-A-1"
+        "9, monitor:HDMI-A-1"
         "10, monitor:HDMI-A-1"
-        "11, monitor:HDMI-A-1"
-        "12, monitor:HDMI-A-1"
-        "13, monitor:HDMI-A-1"
-        "14, monitor:HDMI-A-1"
-        "15, monitor:HDMI-A-1"
-        "16, monitor:HDMI-A-1"
       ];
 
       windowrule = [
