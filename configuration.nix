@@ -51,7 +51,7 @@
   };
 
   services.flatpak = {
-    enable = true;
+    enable = false;
   };
 
   services.xserver = {
@@ -65,8 +65,6 @@
       options = "grp:win_space_toggle";
       };
   };
-
-  xdg.portal.enable = true;
 
   hardware.nvidia = {
     modesetting.enable = true;
