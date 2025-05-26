@@ -49,13 +49,11 @@
             rebuild = "sudo nixos-rebuild switch --flake ${flakePath}";
             hms = "home-manager switch --flake ${flakePath}";
             c = "code";
-            hypr = "c ~/.config/hypr/hyprland.conf`";
+            hypr = "c ~/.config/hypr/hyprland.conf";
         };
-        bashrcExtra = ''
-            if [ -z "${WAYLAND_DISPLAY}"] && [ "${XDG_VTNR}" -eq 1 ]; then
-                dbus-run-sesion Hyprland
-            fi
-            '';
+        profileExtra = ''
+            exec Hyprland
+        '';
     };
 
     programs.vscode = {
