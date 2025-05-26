@@ -54,12 +54,7 @@
     enable = true;
   };
 
-  programs.hyprland = {
-    enable = true;
-    withUWSM = true;
-  };
-
-  security.pam.services.hyprlock = {};
+  services.getty.autologinUser = "wilol";
 
   services.xserver = {
     enable = true;
