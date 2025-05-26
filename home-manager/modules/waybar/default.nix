@@ -45,6 +45,26 @@
           on-click = "pavucontrol";
         };
 
+        "network" = {
+        format-wifi = " ";
+        format-ethernet = "ethernet";
+        format-disconnected = " ";
+        tooltip-format-disconnected = "Error";
+        tooltip-format-wifi = "{essid} ({signalStrength}%)  ";
+        tooltip-format-ethernet = "{ifname} 🖧";
+        on-click = "alacritty nmtui";
+        };
+
+        "cpu" = {
+          format = "  {usage}%";
+          tooltip = false;
+        };
+
+        "memory" = {
+          format = "  {used:0.1f}G";
+          tooltip = false;
+        };
+
         "battery" = {
           states = {
             warning = 30;

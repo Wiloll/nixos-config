@@ -21,7 +21,7 @@
     color: #ffffff;
   }
   #workspaces button {
-    border: 9px;
+    border: 9
   }
   #workspaces button.active {
     background: #0E3386;
@@ -30,40 +30,4 @@
   #clock, #battery, #pulseaudio, #tray, #language {
     padding: 0 10px;
     margin: 0 10px;
-  }
-  
-  #language {
-    margin: 0;
-    color: #4169E1;
-    border-bottom: 5px solid #4169E1;
-  }
-  
-  #pulseaudio {
-    margin: 0;
-    color: #0000FF;
-    border-bottom: 5px solid #0000FF;
-  }
-  
-  #pulseaudio.muted {
-    padding: 0 20px;
-    color: #0000CD;
-    border-bottom: 5px solid #0000CD;
-  }
-  
-  #battery {
-    margin: 0;
-    color: #00CED1;
-    border-bottom: 5px solid #00CED1;
-  }
-  
-  #clock {
-    margin: 0;
-    color: #7FFFD4;
-    border-bottom: 5px solid #7FFFD4;
-  }
-  
-  #tray {
-    margin: 0;
-    color: #191970;
-    border-bottom: 5px solid #191970;
   }
