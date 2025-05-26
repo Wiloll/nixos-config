@@ -30,8 +30,8 @@
       ];
 
       general = {
-        gaps_in = 0;
-        gaps_out = 0;
+        gaps_in = 10;
+        gaps_out = 5;
 
         border_size = 2;
 
