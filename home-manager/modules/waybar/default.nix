@@ -46,13 +46,13 @@
         };
 
         "network" = {
-        format-wifi = " ";
-        format-ethernet = "ethernet";
-        format-disconnected = " ";
-        tooltip-format-disconnected = "Error";
-        tooltip-format-wifi = "{essid} ({signalStrength}%)  ";
-        tooltip-format-ethernet = "{ifname} 🖧";
-        on-click = "alacritty nmtui";
+          format-wifi = " ";
+          format-ethernet = "ethernet";
+          format-disconnected = " ";
+          tooltip-format-disconnected = "Error";
+          tooltip-format-wifi = "{essid} ({signalStrength}%)  ";
+          tooltip-format-ethernet = "{ifname} 🖧";
+          on-click = "alacritty nmtui";
         };
 
         "cpu" = {

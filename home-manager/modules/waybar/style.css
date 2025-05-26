@@ -27,7 +27,7 @@
     background: #0E3386;
   }
   
-  #clock, #battery, #pulseaudio, #tray, #language {
+  #clock, #battery, #pulseaudio, #tray, #language, #network, #cpu, #memory {
     padding: 0 10px;
     margin: 0 10px;
   }
