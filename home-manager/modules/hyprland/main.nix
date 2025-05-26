@@ -15,8 +15,11 @@
         "AQ_DRM_DEVICES,/dev/dri/card0:/dev/dri/card1"
       ];
 
-      monitor = "eDP-1, 1920x1080@144Hz, 0x0, 1";
-      monitor = "HDMI-A-1, 1920x1080@239.76Hz, -1920x0, 1";
+      monitor = [
+        "eDP-1, 1920x1080@144Hz, 0x0, 1";
+        "HDMI-A-1, 1920x1080@239.76Hz, -1920x0, 1"
+      ];
+      
       "$mainMod" = "SUPER";
       "$terminal" = "alacritty";
       "$fileManager" = "nemo";
