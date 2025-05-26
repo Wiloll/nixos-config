@@ -16,10 +16,10 @@
       ];
 
       monitor = [
-        "eDP-1, 1920x1080@144Hz, 0x0, 1";
+        "eDP-1, 1920x1080@144Hz, 0x0, 1"
         "HDMI-A-1, 1920x1080@239.76Hz, -1920x0, 1"
       ];
-      
+
       "$mainMod" = "SUPER";
       "$terminal" = "alacritty";
       "$fileManager" = "nemo";
