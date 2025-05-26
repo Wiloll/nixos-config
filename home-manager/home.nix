@@ -45,7 +45,7 @@
             rebuild = "sudo nixos-rebuild switch --flake ${flakePath}";
             hms = "home-manager switch --flake ${flakePath}";
             c = "code";
-            hypr = "c ~/.config/hypr/hyprland.conf`";
+            hypr = "c ~/.config/hypr/hyprland.conf";
         };
     };
 
