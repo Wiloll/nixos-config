@@ -28,7 +28,10 @@
             brightnessctl
             playerctl
             mpv
-            hyprsome
+            xwayland
+            xdg-desktop-portal-hyprland
+            polkit
+            dconf
         ];
     };
 
