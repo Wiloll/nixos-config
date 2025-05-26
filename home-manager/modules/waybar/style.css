@@ -5,7 +5,7 @@
     font-weight: bold;
     font-size: 16px;
     min-height: 0;
-    color: #ebdbb2;
+    color: #F0F8FF;
   }
   
   window#waybar {
@@ -14,59 +14,54 @@
   
   /* Workspace Buttons */
   #workspaces button label{
-    color: #ebdbb2;
+    color: #008080;
     padding: 0 10px;
+    border: 9px;
   }
   #workspaces button.active label {
-    color: #1d2021;
+    color: #005A9C;
   }
   #workspaces button.active {
-    background: #d65d0e;
+    background: #0E3386;
   }
   
-  #clock, #battery, #pulseaudio, #tray, #language, #weather {
+  #clock, #battery, #pulseaudio, #tray, #language {
     padding: 0 10px;
     margin: 0 10px;
   }
   
   #language {
     margin: 0;
-    color: #d79921;
-    border-bottom: 5px solid #d79921;
-  }
-  
-  #custom-weather {
-    margin: 0;
-    color: #98971a;
-    border-bottom: 5px solid #98971a
+    color: #4169E1;
+    border-bottom: 5px solid #4169E1;
   }
   
   #pulseaudio {
     margin: 0;
-    color: #689d6a;
-    border-bottom: 5px solid #689d6a;
+    color: #0000FF;
+    border-bottom: 5px solid #0000FF;
   }
   
   #pulseaudio.muted {
     padding: 0 20px;
-    color: #cc241d;
-    border-bottom: 5px solid #cc241d;
+    color: #0000CD;
+    border-bottom: 5px solid #0000CD;
   }
   
   #battery {
     margin: 0;
-    color: #458588;
-    border-bottom: 5px solid #458588;
+    color: #00008B;
+    border-bottom: 5px solid #00008B;
   }
   
   #clock {
     margin: 0;
-    color: #b16286;
-    border-bottom: 5px solid #b16286;
+    color: #000080;
+    border-bottom: 5px solid #000080;
   }
   
   #tray {
     margin: 0;
-    color: #d65d0e;
-    border-bottom: 5px solid #d65d0e;
+    color: #191970;
+    border-bottom: 5px solid #191970;
   }
