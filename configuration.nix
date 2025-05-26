@@ -53,7 +53,7 @@
   services.flatpak = {
     enable = true;
   };
-
+ 
   services.getty.autologinUser = "wilol";
 
   services.xserver = {
