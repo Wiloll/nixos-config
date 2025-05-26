@@ -14,12 +14,14 @@
   
   /* Workspace Buttons */
   #workspaces button label{
-    color: #008080;
+    color: #ffffff;
     padding: 0 10px;
-    border: 9px;
   }
   #workspaces button.active label {
-    color: #005A9C;
+    color: #ffffff;
+  }
+  #workspaces button {
+    border: 9px;
   }
   #workspaces button.active {
     background: #0E3386;
@@ -50,14 +52,14 @@
   
   #battery {
     margin: 0;
-    color: #00008B;
-    border-bottom: 5px solid #00008B;
+    color: #00CED1;
+    border-bottom: 5px solid #00CED1;
   }
   
   #clock {
     margin: 0;
-    color: #000080;
-    border-bottom: 5px solid #000080;
+    color: #7FFFD4;
+    border-bottom: 5px solid #7FFFD4;
   }
   
   #tray {
