@@ -28,6 +28,5 @@
   }
   
   #clock, #battery, #pulseaudio, #tray, #language, #network, #cpu, #memory {
-    padding: 0 10px;
-    margin: 0 10px;
+    margin: 0 3px;
   }

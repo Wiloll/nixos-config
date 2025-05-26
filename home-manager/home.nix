@@ -79,6 +79,7 @@
             "workbench.colorTheme" = lib.mkForce "GitHub Dark Default";
             "git.enableSmartCommit" = true;
             "git.confirmSync" = false;
+            "security.workspace.trust.untrustedFiles" = "newWindow";
         };
     };
 }
