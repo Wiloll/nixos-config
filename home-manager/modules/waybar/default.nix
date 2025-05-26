@@ -9,7 +9,7 @@
         height = 30;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["hyprland/window"];
-        modules-right = ["hyprland/language" "pulseaudio" "memory" "cpu" "battery" "clock" "network" "tray"];
+        modules-right = ["pulseaudio" "memory" "cpu" "battery" "network"];
         "hyprland/workspaces" = {
           disable-scroll = true;
           show-special = true;
@@ -20,13 +20,6 @@
           persistent-workspaces = {
             "*" = 8;
           };
-        };
-
-        "hyprland/language" = {
-          format-en = "🇺🇸";
-          format-ua = "🇺🇦";
-          min-length = 5;
-          tooltip = false;
         };
 
         "pulseaudio" = {
@@ -74,16 +67,6 @@
           format-charging = " {capacity}%";
           format-alt = "{time} {icon}";
           format-icons = ["" "" "" "" ""];
-        };
-
-        "clock" = {
-          format = "{:%d.%m.%Y - %H:%M}";
-          format-alt = "{:%A, %B %d at %R}";
-        };
-
-        "tray" = {
-          icon-size = 14;
-          spacing = 1;
         };
       };
     };

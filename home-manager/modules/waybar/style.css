@@ -17,16 +17,14 @@
     color: #ffffff;
     padding: 0 10px;
   }
-  #workspaces button.active label {
-    color: #ffffff;
-  }
   #workspaces button {
-    border: 9
+    border-radius: 15px;
   }
   #workspaces button.active {
     background: #0E3386;
+    border-radius: 15px;
   }
   
-  #clock, #battery, #pulseaudio, #tray, #language, #network, #cpu, #memory {
+  #battery, #pulseaudio, #network, #cpu, #memory {
     margin: 0 3px;
   }
