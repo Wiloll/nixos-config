@@ -59,8 +59,10 @@
     wlr.enable = true;
   };
 
-  services.getty.autoLogin.enable = true;
-  services.getty.autoLogin.user = "wilol";
+  services.getty.autologinUser = {
+    enable = true;
+    user = "wilol";
+  };
 
   services.xserver = {
     enable = true;
