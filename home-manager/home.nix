@@ -27,6 +27,8 @@
             mako
             brightnessctl
             playerctl
+            mpv
+            hyprsome
         ];
     };
 
@@ -74,7 +76,7 @@
             "scm.inputFontSize" = 16.095238095238095;
             "screencastMode.fontSize" = 69.33333333333333;
             "terminal.integrated.fontSize" = 17.333333333333332;
-            "workbench.colorTheme" = lib.mkForce "Abyss";
+            "workbench.colorTheme" = lib.mkForce "GitHub Dark Default";
             "git.enableSmartCommit" = true;
             "git.confirmSync" = false;
         };
