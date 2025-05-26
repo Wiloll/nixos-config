@@ -59,9 +59,12 @@
     wlr.enable = true;
   };
 
+  services.getty.autoLogin.enable = true;
+  services.getty.autoLogin.user = "wilol";
+
   services.xserver = {
     enable = true;
-    displayManager.gdm.enable = true;
+    displayManager.gdm.enable = false;
     videoDrivers = [ "nvidia" "nvidia-dkms" "nvidia-utils" "nvidia-wayland"];
 
     xkb = {
