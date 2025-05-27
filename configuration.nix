@@ -70,6 +70,10 @@
       };
   };
 
+  services.tlp = {
+      enable = true;
+  };
+
   hardware.nvidia = {
     modesetting.enable = true;
     open = false;  # Or true, depending on your preference and GPU

@@ -26,5 +26,6 @@
   }
   
   #battery, #pulseaudio, #network, #cpu, #memory {
-    margin: 0 3px;
+    margin: 0 10px;
+    padding: 0 0px;
   }

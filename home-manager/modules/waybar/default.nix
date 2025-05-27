@@ -58,12 +58,12 @@
         };
 
         "cpu" = {
-          format = "  {usage}%";
+          format = " {usage}%";
           tooltip = false;
         };
 
         "memory" = {
-          format = "  {used:0.1f}G";
+          format = " {used:0.1f}G";
           tooltip = false;
         };
 
