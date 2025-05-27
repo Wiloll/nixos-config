@@ -51,7 +51,7 @@
             hypr = "c ~/.config/hypr/hyprland.conf";
             conf = "c ~/nix";
             shut = "sudo shutdown now";
-            reboot = "sudo reboot -f";
+            restart = "sudo reboot -f";
         };
         initExtra = ''
             if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
