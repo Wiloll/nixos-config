@@ -49,11 +49,11 @@
             hms = "home-manager switch --flake ${flakePath}";
             c = "code";
             hypr = "c ~/.config/hypr/hyprland.conf";
+            conf = "c ~/nix";
         };
         initExtra = ''
             if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
             exec Hyprland
-            exec hyprlock
             fi
         '';
     };
