@@ -61,7 +61,7 @@
   services.xserver = {
     enable = true;
     displayManager.gdm.enable = true;
-    videoDrivers = [ "nvidia" "nvidia-dkms" "nvidia-utils" "nvidia-wayland"];
+    videoDrivers = [ "nvidia" "nvidia-open-dkms" "nvidia-utils" "nvidia-wayland" "nvidia-vaapi-driver"];
 
     xkb = {
       layout  = "us,ua";

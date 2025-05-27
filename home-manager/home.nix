@@ -32,6 +32,7 @@
             xdg-desktop-portal-hyprland
             polkit
             dconf
+            contrast
         ];
     };
 
