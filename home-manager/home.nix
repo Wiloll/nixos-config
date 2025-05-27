@@ -50,6 +50,12 @@
             c = "code";
             hypr = "c ~/.config/hypr/hyprland.conf";
         };
+        initExtra = ''
+            if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
+            exec Hyprland
+            exec hyprlock
+            fi
+        '';
     };
 
     programs.vscode = {
