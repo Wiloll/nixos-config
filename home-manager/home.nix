@@ -28,10 +28,9 @@
             brightnessctl
             playerctl
             mpv
-            xwayland
             xdg-desktop-portal-hyprland
-            polkit
             dconf
+            telegram-desktop
         ];
     };
 

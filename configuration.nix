@@ -38,7 +38,10 @@
 
   i18n.defaultLocale = "en_US.UTF-8";
 
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
@@ -77,6 +80,8 @@
       enable = true;
   };
 
+  security.polkit.enable = true;
+
   hardware.nvidia = {
     modesetting.enable = true;
     open = false;  # Or true, depending on your preference and GPU
@@ -95,7 +100,7 @@
 
   services.printing.enable = true;
 
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;  
