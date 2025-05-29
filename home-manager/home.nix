@@ -31,6 +31,7 @@
             xdg-desktop-portal-hyprland
             dconf
             telegram-desktop
+            pavucontrol
         ];
     };
 
