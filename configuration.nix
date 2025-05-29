@@ -43,7 +43,11 @@
     xwayland.enable = true;
   };
 
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  environment.sessionVariables = {
+    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+    GBM_BACKEND = "nvidia-drm";
+    NIXOS_OZONE_WL = "1";
+  };
 
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "uk_UA.UTF-8";
@@ -65,7 +69,7 @@
     enable = true;
     # displayManager.gdm.enable = true;
     displayManager.startx.enable = true;
-    videoDrivers = [ "nvidia" "nvidia-open-dkms" "nvidia-utils" "nvidia-wayland" "nvidia-vaapi-driver"];
+    videoDrivers = [ "nvidia" ];
 
     xkb = {
       layout  = "us,ua";
@@ -83,6 +87,7 @@
   security.polkit.enable = true;
 
   hardware.nvidia = {
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
     modesetting.enable = true;
     open = false;  # Or true, depending on your preference and GPU
     nvidiaSettings = true;
@@ -90,11 +95,11 @@
   };
 
   hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
     extraPackages = with pkgs; [
       vulkan-loader     # ICD-завантажувач
       vulkan-tools      # утиліти типу vulkaninfo (за бажанням)\
+      vulkan-validation-layers 
+      libglvnd
     ];
   };
 
@@ -130,6 +135,7 @@
     parted
     gparted
     os-prober
+    egl-wayland
   ];
 
   system.stateVersion = "25.05";
