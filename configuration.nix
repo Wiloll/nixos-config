@@ -105,6 +105,11 @@
     ];
   };
 
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
+  services.blueman.enable = true;
+
   services.printing.enable = true;
 
   services.pulseaudio.enable = false;
@@ -138,6 +143,7 @@
     gparted
     os-prober
     egl-wayland
+    linux-firmware
   ];
 
   system.stateVersion = "25.05";
