@@ -32,6 +32,9 @@
             dconf
             telegram-desktop
             pavucontrol
+            htop
+            lm_sensors
+            fanctl
         ];
     };
 
