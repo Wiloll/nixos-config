@@ -91,7 +91,7 @@
     modesetting.enable = true;
     open = false;  # Or true, depending on your preference and GPU
     nvidiaSettings = true;
-    powerManagement.enable = true;
+    powerManagement.enable = false;
   };
 
   hardware.graphics = {

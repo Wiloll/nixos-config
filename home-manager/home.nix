@@ -34,6 +34,7 @@
             pavucontrol
             htop
             lm_sensors
+            hardinfo2
         ];
     };
 
@@ -54,6 +55,7 @@
             conf = "c ~/nix";
             shut = "sudo shutdown now";
             restart = "sudo reboot -f";
+            killway = "killall waybar";
         };
         initExtra = ''
             if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
