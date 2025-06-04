@@ -38,17 +38,6 @@
 
   i18n.defaultLocale = "en_US.UTF-8";
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
-  environment.sessionVariables = {
-    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-    GBM_BACKEND = "nvidia-drm";
-    NIXOS_OZONE_WL = "1";
-  };
-
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "uk_UA.UTF-8";
     LC_IDENTIFICATION = "uk_UA.UTF-8";
@@ -67,8 +56,10 @@
 
   services.xserver = {
     enable = true;
-    # displayManager.gdm.enable = true;
-    displayManager.startx.enable = true;
+
+    displayManager.gdm.enable = true;
+    desktopManager.gnome.enable = true;
+    
     videoDrivers = [ "nvidia" ];
 
     xkb = {
@@ -77,21 +68,17 @@
       options = "grp:win_space_toggle";
       };
   };
-
-  services.getty.autologinUser = "wilol";
+  services.gnome.core-apps.enable = false;
 
   services.tlp = {
-      enable = true;
+      enable = false;
   };
-
-  security.polkit.enable = true;
 
   hardware.nvidia = {
     package = config.boot.kernelPackages.nvidiaPackages.stable;
     modesetting.enable = true;
     open = false;  # Or true, depending on your preference and GPU
     nvidiaSettings = true;
-    powerManagement.enable = false;
   };
 
   hardware.graphics = {
@@ -104,11 +91,6 @@
       libglvnd
     ];
   };
-
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
-
-  services.blueman.enable = true;
 
   services.printing.enable = true;
 
@@ -142,7 +124,6 @@
     parted
     gparted
     os-prober
-    egl-wayland
     linux-firmware
   ];
 

@@ -53,15 +53,9 @@
             c = "code";
             hypr = "c ~/.config/hypr/hyprland.conf";
             conf = "c ~/nix";
-            shut = "sudo shutdown now";
+            shit = "sudo shutdown now";
             restart = "sudo reboot -f";
-            killway = "killall waybar";
         };
-        initExtra = ''
-            if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
-            exec Hyprland
-            fi
-        '';
     };
 
     programs.vscode = {
