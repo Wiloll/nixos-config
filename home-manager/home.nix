@@ -16,19 +16,12 @@
             steam
             onlyoffice-desktopeditors
             gtk3
-            zsh-completions
             zathura
             nemo
             dconf-editor
             p7zip
             alacritty
-            wofi
-            hyprpaper
-            mako
-            brightnessctl
-            playerctl
             mpv
-            xdg-desktop-portal-hyprland
             dconf
             telegram-desktop
             pavucontrol

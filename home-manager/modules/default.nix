@@ -1,7 +1,7 @@
 {
   imports = [
     ./waybar
-    ./obsidian.nix
+    # ./obsidian.nix
     ./stylix.nix
     # ./hyprland
   ];

@@ -32,7 +32,9 @@
 
   networking.networkmanager.enable = true;
 
-  networking.firewall.enable = true;
+  networking.firewall = {
+    enable = true;
+  };
 
   time.timeZone = "Europe/Kyiv";
 
@@ -68,11 +70,8 @@
       options = "grp:win_space_toggle";
       };
   };
-  services.gnome.core-apps.enable = false;
 
-  services.tlp = {
-      enable = false;
-  };
+  services.gnome.core-apps.enable = false;
 
   hardware.nvidia = {
     package = config.boot.kernelPackages.nvidiaPackages.stable;
@@ -87,8 +86,6 @@
     extraPackages = with pkgs; [
       vulkan-loader     # ICD-завантажувач
       vulkan-tools      # утиліти типу vulkaninfo (за бажанням)\
-      vulkan-validation-layers 
-      libglvnd
     ];
   };
 
