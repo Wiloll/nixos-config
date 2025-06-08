@@ -52,6 +52,13 @@
     LC_TIME = "uk_UA.UTF-8";
   };
 
+  # environment.variables = {
+    # __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+    # GBM_BACKEND = "nvidia-drm"; # додатково для Wayland сумісності
+    # LIBVA_DRIVER_NAME = "nvidia";
+    # WLR_NO_HARDWARE_CURSORS = "1"; # якщо курсор блимає
+  # };
+
   services.flatpak = {
     enable = true;
   };
@@ -74,8 +81,8 @@
   services.gnome.core-apps.enable = false;
 
   hardware.nvidia = {
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
     modesetting.enable = true;
+    powerManagement.enable = true;
     open = false;  # Or true, depending on your preference and GPU
     nvidiaSettings = true;
   };

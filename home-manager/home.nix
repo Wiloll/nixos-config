@@ -28,6 +28,8 @@
             htop
             lm_sensors
             hardinfo2
+            gnome-tweaks
+            glxinfo
         ];
     };
 
