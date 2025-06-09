@@ -30,6 +30,8 @@
             hardinfo2
             gnome-tweaks
             glxinfo
+            protonvpn-gui
+            tor-browser-bundle-bin
         ];
     };
 
