@@ -32,6 +32,7 @@
             glxinfo
             protonvpn-gui
             tor-browser-bundle-bin
+            qbittorrent
         ];
     };
 

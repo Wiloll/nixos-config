@@ -99,6 +99,8 @@
   services.printing.enable = true;
 
   services.pulseaudio.enable = false;
+  services.pulseaudio.support32Bit = true;
+
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;  
@@ -107,26 +109,10 @@
     pulse.enable = true;
   };
 
-  services.tor = {
-    enable = true;
-    openFirewall = true;
-    relay = {
-      enable = true;
-      role = "relay";
-    };
-    settings = {
-      ContactInfo = "maximpaskoserhi@gmail.com";
-      Nickname = "wilol";
-      ORPort = 9001;
-      ControlPort = 9051;
-      BandWidthRate = "1 MBytes";
-    };
-  };
-
   users.users.wilol = {
     isNormalUser = true;
     description = "wilol";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" ];
     packages = with pkgs; [
     ];
   };

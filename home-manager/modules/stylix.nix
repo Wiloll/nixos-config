@@ -65,7 +65,7 @@
       light = "Papirus-Light";
     };
 
-    image = ./wallpapers/paper2.png;
+    image = ./wallpapers/paper1.png;
 
     # image = pkgs.fetchurl {
       # url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png";
