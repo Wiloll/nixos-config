@@ -33,6 +33,8 @@
             protonvpn-gui
             tor-browser-bundle-bin
             qbittorrent
+            unrar
+            appimage-run
         ];
     };
 
