@@ -52,12 +52,10 @@
     LC_TIME = "uk_UA.UTF-8";
   };
 
-  # environment.variables = {
-    # __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-    # GBM_BACKEND = "nvidia-drm"; # додатково для Wayland сумісності
-    # LIBVA_DRIVER_NAME = "nvidia";
+  environment.variables = {
+    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
     # WLR_NO_HARDWARE_CURSORS = "1"; # якщо курсор блимає
-  # };
+  };
 
   services.flatpak = {
     enable = true;
@@ -96,6 +94,8 @@
     ];
   };
 
+  hardware.xone.enable = true;
+
   services.printing.enable = true;
 
   services.pulseaudio.enable = false;
@@ -131,6 +131,7 @@
     gparted
     os-prober
     linux-firmware
+    linuxKernel.packages.linux_zen.xone
   ];
 
   system.stateVersion = "25.05";

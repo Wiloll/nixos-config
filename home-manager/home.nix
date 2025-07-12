@@ -35,6 +35,10 @@
             qbittorrent
             unrar
             appimage-run
+            libusbp
+            gnumake
+            gcc
+            cmake
         ];
     };
 
